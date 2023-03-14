@@ -6,6 +6,10 @@ input[type=text],input[type=email],input[type=password],input[type=number], text
     @apply w-full border my-1 py-2 px-3 rounded-2xl
 }
 
+textarea{
+    height: 140px;
+}
+
 button.primary {
     @apply w-full bg-primary text-white py-2  rounded-2xl
 }

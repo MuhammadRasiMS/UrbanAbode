@@ -1,16 +1,16 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Layout from "./Layout";
-import ProfilePage from "./pages/ProfilePage";
-import IndexPage from "./pages/IndexPage";
-import LoginPage from "./pages/LoginPage";
-import PlacesPage from "./pages/PlacesPage";
-import RegisterPage from "./pages/RegisterPage";
+import IndexPage from "./pages/Home/IndexPage"
+import ProfilePage from "./pages/Account/Profile/ProfilePage";
+import LoginPage from "./pages/Login/LoginPage";
+import PlacesPage from "./pages/Account/Places/PlacesPage";
+import RegisterPage from "./pages/Register/RegisterPage";
 import { UserContextProvider } from "./UserContext";
-import PlacesFormPage from "./pages/PlacesFormPage";
-import PlacePage from "./pages/PlacePage";
-import BookingsPage from "./pages/BookingsPage";
-import BookingPage from "./pages/BookingPage"
+import PlacesFormPage from "./pages/PlacesForm/PlacesFormPage";
+import PlacePage from "./pages/Place/PlacePage";
+import BookingsPage from "./pages/Account/Bookings/BookingsPage";
+import BookingPage from "./pages/Booking/BookingPage"
 
 
 

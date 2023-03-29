@@ -1,10 +1,10 @@
 import AccountNav from "../AccountNav";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import PlaceImg from "../PlaceImg";
+import PlaceImg from "../../Place/PlaceImg";
 import { differenceInCalendarDays, format } from "date-fns";
 import { Link } from "react-router-dom";
-import BookingDates from "../BookingDates";
+import BookingDates from "../../Booking/BookingDates";
 
 export default function BookingsPage() {
   const [bookings, setBookings] = useState([]);
@@ -20,6 +20,7 @@ export default function BookingsPage() {
         {bookings?.length > 0 &&
           bookings.map((booking) => (
             <Link
+              key={booking._id}
               to={`/account/bookings/${booking._id}`}
               className="flex gap-4 bg-gray-200 rounded-2xl mt-2 overflow-hidden"
             >

@@ -4,7 +4,7 @@ require('dotenv').config()
 const mongoose  = require('mongoose');
 const app = express()
 const cookieParser = require('cookie-parser')
-const authRoute = require('./routes/auth')
+const route = require('./routes/allRoutes')
 
 require("dotenv").config();
 
@@ -17,7 +17,7 @@ app.use(
     origin: "http://127.0.0.1:5173",
   })
 );
-app.use('/', authRoute);
+app.use('/', route);
 
 
 mongoose.connect(

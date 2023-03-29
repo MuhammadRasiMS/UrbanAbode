@@ -17,7 +17,7 @@ export default function IndexPage() {
       <div className="mt-10 grid  grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-8">
         {places.length > 0 &&
           places.map((place) => (
-            <Link to={"/place/" + place._id}>
+            <Link key={place._id} to={"/place/" + place._id}>
               <motion.div
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.8 }}

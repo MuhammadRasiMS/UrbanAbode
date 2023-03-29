@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useContext, useState } from "react";
 import { Link, Navigate } from "react-router-dom";
-import { UserContext } from "../UserContext";
+import { UserContext } from "../../UserContext";
 import { motion } from "framer-motion";
 
 export default function LoginPage() {

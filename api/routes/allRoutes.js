@@ -2,7 +2,7 @@ const multer = require('multer');
 const { userRegister, userLogin, userProfile, 
     logout, uploadByLink, uploadPhoto, 
     addPlace, viewPlaces, viewPlaceById, editPlace,
-    viewAllPlaces, bookingsPost, bookingsGet } = require('../controller/authController');
+    viewAllPlaces, bookingsPost, bookingsGet } = require('../controller/controllers');
 
 const router = require('express').Router();
 
